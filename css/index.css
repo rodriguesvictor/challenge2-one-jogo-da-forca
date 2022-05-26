@@ -159,7 +159,7 @@ footer p {
     text-align: center;
     font-weight: bold;
     color: #0A3871;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .fadeIn {
@@ -202,4 +202,17 @@ footer p {
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+       
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    footer p {
+        font-size: 1.5em;
+    }
+}
