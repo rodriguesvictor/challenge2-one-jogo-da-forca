@@ -1,0 +1,205 @@
+*, footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+body {
+    background: #F3F5FC;
+}
+
+header {
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 48px;
+    width: 36px;
+}
+
+header div#logo {
+    display: flex;
+    position: relative;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 40px;
+    cursor: default;
+    transition: 1s all;
+}
+
+#logo:hover {
+    transform: scale(1.5);
+}
+
+main {
+    margin: 0 auto;
+    height: 86vh;
+}
+
+.principal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.letras {
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.letras span {
+    display: inline-block;
+    border-bottom: 3px solid #0A3871;
+    width: 40px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0A3871;
+}
+
+.erradas {
+    height: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    margin-top: 1px;
+}
+
+.erradas span {
+    border-bottom: 2px solid white;
+    width: 20px;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #495057;
+    border: none;
+    align-items: center;
+}
+
+.principal button {
+    padding: 2% 5%;
+    transition: 1s all;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.jogar, #jogar-novamente, .salvar-palavra {
+    color: #FFFFFF;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.jogar:hover, #jogar-novamente:hover, .salvar-palavra:hover {
+    background: #F3F5FC;
+    color: #0A3871;
+}
+
+
+.adicionar {
+    margin-top: 1.5%;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+
+}
+
+.adicionar:hover, .desistir:hover, .sair:hover {
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.principal-adicionar {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tela-jogo, .principal-adicionar {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.tela-jogo button, .principal-adicionar button {
+    height: 48px;
+    max-width: 296px;
+    min-width: 155px;
+    width: 15%;
+    border-radius: 24px;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    transition: 1s all;
+}
+
+.botoes-jogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.desistir, .sair {
+    margin-left: 1%;
+    background: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+footer p {
+    margin-top: 1px;
+    text-align: center;
+    font-weight: bold;
+    color: #0A3871;
+    font-size: 0.8em;
+}
+
+.fadeIn {
+    opacity: 100;
+    transition: 0.5s;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.texto-novo {
+    border-style: none;
+    font-size: 2em;
+    color: #0A3871;
+    background: none;
+    resize: none;
+    width: 100%;
+    height: 80%;
+
+}
+
+.texto-novo::-webkit-input-placeholder {
+    color: #0A3871;
+}
+
+.alertas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.alertas span {
+    color: #495057;
+    opacity: 0.8;
+    padding-left: 1.5%;
+    padding-bottom: 1em;
+    background-image: url('../img/erroricon.svg');
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {}

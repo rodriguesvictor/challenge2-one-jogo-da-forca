@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width">
+    <title>Jogo da Forca!
+    </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div id="logo" alt="Logo da Alura com a letra A"></div>
+        </a>
+    </header>
+    <main>
+        <section class="principal">
+            <button class="jogar trocarTela">Comece a jogar</button>
+            <button class="adicionar trocarTela">Adicionar palavra</button>
+        </section>
+        <section class="principal-adicionar">
+            <div>
+                <textarea class="texto-novo" type="text" placeholder="Digite uma palavra"></textarea>
+            </div>
+            <div class="alertas">
+                <span>Máx. de 8 Letras</span>
+            </div>
+            <div class="botoes-jogo">
+                <button class="jogar salvar-palavra">Salvar e Jogar</button>
+                <button class="sair index trocarTela">Sair</button>
+            </div>
+        </section>
+        <section class="tela-jogo">
+            <canvas width="450" height="500"></canvas>
+            <div class="letras certas"></div>
+            <div class="letras erradas"></div>
+            <div class="botoes-jogo">
+                <button id="jogar-novamente">Jogue Novamente</button>
+                <button class="desistir index trocarTela">Desistir</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Victor Rodrigues - 2022</p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+
+</html>
